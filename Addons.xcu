@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+oor:name="Addons" 
+oor:package="org.openoffice.Office">
+<node oor:name="AddonUI">
+  <node oor:name="OfficeMenuBarMerging">
+    <node oor:name="mytools.calc.AdjustHeight" oor:op="replace">
+      <node oor:name="a1_0" oor:op="replace">
+        <prop oor:name="MergePoint">
+          <value>.uno:ViewMenu\.uno:ViewValueHighlighting</value>
+        </prop>
+        <prop oor:name="MergeCommand">
+          <value>AddAfter</value>
+        </prop>
+        <prop oor:name="MergeFallback">
+          <value>AddPath</value>
+        </prop>
+        <prop oor:name="MergeContext">
+          <value>com.sun.star.sheet.SpreadsheetDocument</value>
+        </prop>
+        <node oor:name="MenuItems">
+          <node oor:name="a0" oor:op="replace">
+            <prop oor:name="URL">
+                <value>mytools.calc.AdjustHeight:Adjust</value>
+            </prop>
+            <prop oor:name="Title">
+                <value xml:lang="en-US">Adjust Row Height</value>
+            </prop>
+            <prop oor:name="Context" oor:type="xs:string">
+                <value>com.sun.star.sheet.SpreadsheetDocument</value>
+            </prop>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</node>
+</oor:component-data>

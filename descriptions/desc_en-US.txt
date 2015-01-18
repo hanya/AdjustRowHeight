@@ -1,0 +1,1 @@
+Adds View - Adjust Row Height entry.
